@@ -1,0 +1,109 @@
+body {
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.Q1-container {
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.content {
+    padding: 16px;
+    height: 200px; 
+    overflow-y: scroll;
+}
+.navbar {
+    background-color: #333; 
+    position: sticky; 
+}
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; 
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+}
+.navbar .active {
+    background-color: #04AA6D; 
+}
+/*=========================================================================*/
+/*Q2*/
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.767);
+    color: white;
+    padding: 10px 15px;
+}
+
+.text-overlay h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.text-overlay p {
+    margin: 5px 0 0 0;
+    font-size: 12px;
+}
+/*=========================================================================*/
+/*Q3*/
+.gallery-container {
+    margin: 0 auto; 
+    padding: 10px;
+    border: 1px solid #e0e0e0; 
+    background-color: #fff;
+    width: 620px;
+}
+
+.card {
+    display: inline-block;
+    width: 180px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+    font-size: 16px; 
+    text-align: left; 
+}
+
+
+.card img {
+   width: 180px;
+   height: 200px; 
+    display: block; 
+}
+
+.card-content {
+    padding: 15px;
+}
+.card-content h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #666; 
+}

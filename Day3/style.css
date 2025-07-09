@@ -4,3 +4,21 @@
 div{
     border: solid red;
 } */
+/* h1{
+    color:red;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border: solid;
+    text-decoration:underline;
+    text-transform: capitalize;
+    width: 65%;
+} */
+ .div1{
+    border: solid;
+ }
+ img{
+    width: 200px;
+    height: 100px;
+ }
