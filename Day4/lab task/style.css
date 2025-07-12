@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    background-color: #121618;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+#navbar {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    gap: 40px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+#navbar li a:hover {
+    color: orange;
+}
+.Aboutsection{
+     background-image: url(imgs/horizontal\ bg.png);
+}
+.Aboutsection h1 {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.image-bg-section {
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.main-page-image {
+    width: 100%;
+    display: block;
+}
+
+.About {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.About h1 {
+    font-size: 2.8em;
+    letter-spacing: 1px;
+}
+
+.About p {
+    max-width: 850px;
+    margin: 20px auto;
+    line-height: 1.7;
+    color: #d8d6d6;
+}
+
+.About hr {
+    width: 90px;
+    border: 1px solid #555;
+    margin: 40px auto;
+}
+
+.portfolio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin-top: 40px;
+}
+
+.portfolio-row {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            width: 100%;
+}
+
+.port1, .port2, .port3 {
+            text-align: center;
+}
+
+.portfolio .port1 img,.port2 img {
+            width: 60%;
+            height: auto;
+            margin-bottom: 15px;
+}
+.port3 img{
+    width:20%
+}
+.portfolio h3 {
+            margin: 0 0 10px 0;
+            color: #ffffff;
+}
+
+.portfolio p {
+            font-size: 14px;
+            color: #d8d6d6;
+            line-height: 1.5;
+}
+.myTeam {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.myTeam h1 {
+    font-size: 2.8em;
+    margin-bottom: 50px;
+}
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team1, .team2, .team3 {
+    flex-basis: 300px;
+}
+
+.myTeam img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.myTeam h3 {
+    margin: 15px 0 5px 0;
+}
+
+.myTeam p {
+    color: #d8d6d6;
+}
+
+.services {
+    text-align: center;
+    background-image: url(imgs/horizontal\ bg.png);
+    
+}
+
+.services h1 {
+    font-size: 2.4em;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    color: #000000;
+}
+
+.service-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.service1, .service2, .service3 {
+    flex-basis: 250px;
+    text-align: center;
+}
+
+.services img {
+    width: 90px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.services p {
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/*Contact Page*/
+.container {
+    max-width: 1100px; 
+    margin: 80px auto;
+    padding: 0 20px;  
+    display: flex;
+    flex-direction: column; 
+    gap: 70px;       
+}
+
+.part-row {
+    display: flex;      
+    align-items: center; 
+    gap: 40px;  
+}
+.text-content {
+    display: flex;
+    flex-direction: column; 
+    flex: 1; 
+}
+.part-row img {
+    flex-basis: 400px;    
+    width: 400px;
+    height: 280px;
+    border-radius: 8px;  
+    flex-shrink: 0; 
+}
+
+.text-content p {
+    text-align: center;
+    color: #d8d6d6;
+    line-height: 1.7;
+    margin: 0 0 1em 0; 
+}
+.text-content p:last-child {
+    margin-bottom: 0;
+}
