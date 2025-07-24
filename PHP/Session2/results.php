@@ -1,33 +1,40 @@
 <?php
-// echo "<pre>";
-// var_dump($_POST);
-// echo "</pre>";
-    $name= htmlspecialchars($_POST['name']);
-    $email= htmlspecialchars($_POST['email']);
-    $country= htmlspecialchars($_POST['country']);
-    $gender= htmlspecialchars($_POST['gender']);
+echo "<pre>";
+var_dump($_POST);
+echo "</pre>";
+$name= $_POST['name'];
+$email= $_POST['email'];
+$country= $_POST['country'];
+$gender= $_POST['gender'];
+$languages= $_POST['languages'];
+echo "<p><strong>Name:</strong> " . $name . "</p>";
+echo "<p><strong>Email:</strong> " . $email . "</p>";   
+    // $name= htmlspecialchars($_POST['name']);
+    // $email= htmlspecialchars($_POST['email']);
+    // $country= htmlspecialchars($_POST['country']);
+    // $gender= htmlspecialchars($_POST['gender']);
 
-    echo "<p><strong>Name:</strong> " . $name . "</p>";
-    echo "<p><strong>Email:</strong> " . $email . "</p>";
-    echo "<p><strong>Country:</strong> " . $country . "</p>";
-    echo "<p><strong>Gender:</strong> " . $gender . "</p>";
+    // echo "<p><strong>Name:</strong> " . $name . "</p>";
+    // echo "<p><strong>Email:</strong> " . $email . "</p>";
+    // echo "<p><strong>Country:</strong> " . $country . "</p>";
+    // echo "<p><strong>Gender:</strong> " . $gender . "</p>";
 
-    if (isset($_POST['languages']) && !empty($_POST['languages'])) {
-        $languages = $_POST['languages'];
-        echo "<p><strong>Languages:</strong></p>";
+    // if (isset($_POST['languages']) && !empty($_POST['languages'])) {
+    //     $languages = $_POST['languages'];
+    //     echo "<p><strong>Languages:</strong></p>";
         
-        echo "<ul>";
+    //     echo "<ul>";
         
-        foreach ($languages as $language) {
-            echo "<li>" . htmlspecialchars($language) . "</li>";
-        }
+    //     foreach ($languages as $language) {
+    //         echo "<li>" . htmlspecialchars($language) . "</li>";
+    //     }
         
-        echo "</ul>";
+    //     echo "</ul>";
         
-    } else {
+    // } else {
     
-        echo "<p><strong>Languages:</strong> None selected.</p>";
-    }
+    //     echo "<p><strong>Languages:</strong> None selected.</p>";
+    // }
     ?>
 <style>
 <!DOCTYPE html>
