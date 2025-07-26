@@ -1,0 +1,12 @@
+[
+    {
+        "name": "nahed",
+        "email": "nahed@gmail.com",
+        "password_hash": "$2y$10$HwqoVvhrXzwPGe20ulDGoOWsAdUSgBIYJl8W0DlsA61as9bAUhiiO",
+        "age": "21",
+        "country": "Egypt",
+        "gender": "Female",
+        "languages": "arabic, english, spanish",
+        "profile_picture": "uploads\/6884e0a8522c5-nahedimg.jpg"
+    }
+]
