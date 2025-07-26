@@ -14,19 +14,14 @@
 
 <div class="container">
     <?php
-    // مصفوفة $_GET هي التي تحتوي على البيانات
-    // نتحقق أولاً أنها ليست فارغة
     if (!empty($_GET)) {
         echo "<h1>Registration Successful!</h1>";
         echo "<p>Here is the data you submitted:</p>";
-        
-        // ببساطة، نطبع محتويات مصفوفة GET
         echo "<pre>";
         print_r($_GET);
         echo "</pre>";
 
     } else {
-        // إذا حاول شخص الدخول على الصفحة مباشرة
         echo "<h1>No Data Received</h1>";
         echo "<p>Please fill out the form first.</p>";
     }
