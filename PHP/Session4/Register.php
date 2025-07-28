@@ -1,12 +1,10 @@
 <?php
 session_start();
 
-// --- 1. Initialize all variables ---
 $name_error = $email_error = $age_error = $languages_error = $password_error = $file_error = '';
 $name = $email = $age = $country = $gender = $password = $profile_picture_path = '';
 $languages = [];
 
-// --- 2. Check if the form was submitted ---
 if (isset($_POST['register'])) {
 
     // --- 3. Validate form fields ---
