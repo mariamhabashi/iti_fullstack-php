@@ -39,29 +39,14 @@ if (isset($_POST['register'])) {
     if (empty($password)) {
         $password_error = "Password is required";
     }
-
-    // --- 4. Handle file upload (if a file was chosen) ---
     if (isset($_FILES["fileToUpload"]) && $_FILES["fileToUpload"]["error"] == 0) {
         $target_dir = "uploads/";
         if (!is_dir($target_dir)) {
             mkdir($target_dir, 0777, true);
         }
-        $target_file = $target_dir . uniqid() . '-' . basename($_FILES["fileToUpload"]["name"]); // Use uniqid to prevent overwriting
+        $target_file = $target_dir . uniqid() . '-' . basename($_FILES["fileToUpload"]["name"]);
         $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-
-        // Check if image file is a actual image or fake image
-        $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-        if ($check === false) {
-            $file_error = "File is not an image.";
-            $uploadOk = 0;
-        }
-
-        // Check file size (e.g., 5MB limit)
-        if ($_FILES["fileToUpload"]["size"] > 5000000) {
-            $file_error = "Sorry, your file is too large (max 5MB).";
-            $uploadOk = 0;
-        }
 
         // Allow certain file formats
         if (!in_array($imageFileType, ['jpg', 'png', 'jpeg', 'gif'])) {
@@ -69,7 +54,6 @@ if (isset($_POST['register'])) {
             $uploadOk = 0;
         }
 
-        // Try to upload file if all checks pass
         if ($uploadOk == 1) {
             if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
                 $profile_picture_path = $target_file; // Save the path for JSON
@@ -81,7 +65,6 @@ if (isset($_POST['register'])) {
         $file_error = "Profile picture is required.";
     }
 
-    // --- 5. If all validations pass, save data to JSON ---
     if (empty($name_error) && empty($email_error) && empty($password_error) && empty($age_error) && empty($languages_error) && empty($file_error)) {
 
         $file_path = 'users.json';
@@ -98,7 +81,7 @@ if (isset($_POST['register'])) {
             'country' => $country,
             'gender' => $gender,
             'languages' => $languages_string,
-            'profile_picture' => $profile_picture_path // <-- Save the picture path here
+            'profile_picture' => $profile_picture_path
         ];
 
         $users[] = $new_user;
